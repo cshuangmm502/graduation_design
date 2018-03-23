@@ -6,10 +6,25 @@
  * Time: 12:38
  */
 include_once('../lib/smarty-3.1.30/libs/Smarty.class.php');
+include_once ('../Ko/BaseApp.php');
 
-$smarty = new Smarty();
-$smarty->assign("test", "test");
-$smarty->display('../static/login/index.html');
+class index extends BaseApp{
+    function outputBody()
+    {
+        $smarty = new Smarty();
+        $smarty->assign("test", "test");
+        $smarty->display('../static/login/index.html');
+    }
+
+    function outputTail()
+    {
+        $smarty = new Smarty();
+        $smarty->display('../static/foot.tpl');
+    }
+}
+
+$obj=new index();
+$obj->run();
 
 
 

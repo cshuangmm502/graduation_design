@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-03-11 12:58:36
+/* Smarty version 3.1.30, created on 2018-03-22 00:56:37
   from "G:\phpStormProjects\test\static\login\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5aa527fcd7f180_46560122',
+  'unifunc' => 'content_5ab2ff4503c3a6_66571118',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39bd367e973e334edc38996059d544333ef30e5c' => 
     array (
       0 => 'G:\\phpStormProjects\\test\\static\\login\\index.html',
-      1 => 1520773096,
+      1 => 1521677577,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5aa527fcd7f180_46560122 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ab2ff4503c3a6_66571118 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -76,11 +76,6 @@ function content_5aa527fcd7f180_46560122 (Smarty_Internal_Template $_smarty_tpl)
         </div>
     </form>
 
-</div>
-<div class="copy-rights">
-    <p>Copyright &copy; 2018.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/"
-                                                                                target="_blank" title="模板之家">模板之家</a> -
-        Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
 </div>
 </body>
 <?php echo '<script'; ?>
