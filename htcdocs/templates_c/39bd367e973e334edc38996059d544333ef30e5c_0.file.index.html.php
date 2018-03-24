@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-03-22 00:56:37
+/* Smarty version 3.1.30, created on 2018-03-24 02:36:19
   from "G:\phpStormProjects\test\static\login\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ab2ff4503c3a6_66571118',
+  'unifunc' => 'content_5ab5b9a3e18b25_63640600',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39bd367e973e334edc38996059d544333ef30e5c' => 
     array (
       0 => 'G:\\phpStormProjects\\test\\static\\login\\index.html',
-      1 => 1521677577,
+      1 => 1521858972,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ab2ff4503c3a6_66571118 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ab5b9a3e18b25_63640600 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,9 +43,10 @@ function content_5ab2ff4503c3a6_66571118 (Smarty_Internal_Template $_smarty_tpl)
         }
 
         $(document).ready(function () {
-            $("#submit_button").click(function () {
-                if($("#username").val()==""||!$("#password").val()==""){
-                    $("#username").addClass("key");
+            $("#submit_button").click(function (e) {
+                if($("#username").val()==""||$("#password").val()==""){
+                    alert('账号密码不能为空');
+                    e.preventDefault();
                 }
             })
         })
@@ -78,11 +79,5 @@ function content_5ab2ff4503c3a6_66571118 (Smarty_Internal_Template $_smarty_tpl)
 
 </div>
 </body>
-<?php echo '<script'; ?>
->
-
-
-<?php echo '</script'; ?>
->
 </html><?php }
 }

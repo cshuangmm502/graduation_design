@@ -18,5 +18,7 @@ $sql="select * from user_list WHERE userName = '{$username}' AND passWord = '{$p
 $result = mysqli_query($con,$sql);
 if(mysqli_num_rows($result)==1){
     echo "login success";
+}else{
+    header("location:../../htcdocs/index.php?error=1");
+    exit();
 }
-
