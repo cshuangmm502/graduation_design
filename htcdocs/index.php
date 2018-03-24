@@ -12,7 +12,7 @@ class index extends BaseApp{
     public $error=null;
     function getInformation()
     {
-        $this->error=$_GET['error'];
+        $this->error= isset($_GET['error'])?$_GET['error']:'';
     }
 
     function outputBody()

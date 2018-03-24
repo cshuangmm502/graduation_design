@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/htcdocs/index.php" afterPath="$PROJECT_DIR$/htcdocs/index.php" />
       <change beforePath="$PROJECT_DIR$/htcdocs/templates_c/39bd367e973e334edc38996059d544333ef30e5c_0.file.index.html.php" afterPath="$PROJECT_DIR$/htcdocs/templates_c/39bd367e973e334edc38996059d544333ef30e5c_0.file.index.html.php" />
       <change beforePath="$PROJECT_DIR$/static/login/index.html" afterPath="$PROJECT_DIR$/static/login/index.html" />
-      <change beforePath="$PROJECT_DIR$/static/login/login.php" afterPath="$PROJECT_DIR$/static/login/login.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,21 +40,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htcdocs/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="73">
+              <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/login/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="43" column="93" lean-forward="false" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
+            <state relative-caret-position="395">
+              <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -65,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/static/login/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="284">
-              <caret line="127" column="1" lean-forward="false" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
+              <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,8 +73,8 @@
       <file leaf-file-name="BaseApp.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ko/BaseApp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            <state relative-caret-position="92">
+              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -160,10 +159,10 @@
         <option value="$PROJECT_DIR$/htcdocs/templates_c/39bd367e973e334edc38996059d544333ef30e5c_0.file.index.html.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/665163ec-443e-4799-bb49-1a49c5451a4f/console.sql" />
         <option value="$PROJECT_DIR$/static/foot.tpl" />
-        <option value="$PROJECT_DIR$/Ko/BaseApp.php" />
         <option value="$PROJECT_DIR$/static/login/login.php" />
-        <option value="$PROJECT_DIR$/static/login/index.html" />
+        <option value="$PROJECT_DIR$/Ko/BaseApp.php" />
         <option value="$PROJECT_DIR$/htcdocs/index.php" />
+        <option value="$PROJECT_DIR$/static/login/index.html" />
       </list>
     </option>
   </component>
@@ -309,12 +308,12 @@
       <workItem from="1521677290295" duration="2625000" />
       <workItem from="1521799845810" duration="221000" />
       <workItem from="1521800084107" duration="774000" />
-      <workItem from="1521855399609" duration="3556000" />
+      <workItem from="1521855399609" duration="6090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52192000" />
+    <option name="totallyTimeSpent" value="54726000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -691,18 +690,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/login/css/style.css">
+    <entry file="file://$PROJECT_DIR$/Ko/BaseApp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="127" column="1" lean-forward="false" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
+        <state relative-caret-position="92">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ko/BaseApp.php">
+    <entry file="file://$PROJECT_DIR$/static/login/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        <state relative-caret-position="284">
+          <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -718,18 +717,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/login/index.html">
+    <entry file="file://$PROJECT_DIR$/htcdocs/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="43" column="93" lean-forward="false" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
+        <state relative-caret-position="73">
+          <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htcdocs/index.php">
+    <entry file="file://$PROJECT_DIR$/static/login/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="395">
+          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding />
         </state>
       </provider>

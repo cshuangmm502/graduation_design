@@ -7,7 +7,7 @@
  */
 
 class BaseApp{
- //   protected function getInformation(){}
+    protected function getInformation(){}
 
     protected function outputHead(){}
 
@@ -16,7 +16,7 @@ class BaseApp{
     protected function outputTail(){}
 
     public function run(){
-    //    $this->getInformation();
+        $this->getInformation();
         $this->outputHead();
         $this->outputBody();
         $this->outputTail();

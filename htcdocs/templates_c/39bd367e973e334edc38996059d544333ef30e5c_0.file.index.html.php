@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-03-24 02:36:19
+/* Smarty version 3.1.30, created on 2018-03-24 03:18:33
   from "G:\phpStormProjects\test\static\login\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ab5b9a3e18b25_63640600',
+  'unifunc' => 'content_5ab5c3897c9cb8_62367533',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39bd367e973e334edc38996059d544333ef30e5c' => 
     array (
       0 => 'G:\\phpStormProjects\\test\\static\\login\\index.html',
-      1 => 1521858972,
+      1 => 1521861509,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ab5b9a3e18b25_63640600 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ab5c3897c9cb8_62367533 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -51,6 +51,16 @@ function content_5ab5b9a3e18b25_63640600 (Smarty_Internal_Template $_smarty_tpl)
             })
         })
 
+        function GetQueryString(name)
+        {
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if(r!=null)return  decodeURI(r[2]); return null;
+        }
+        if(GetQueryString('error')==1){
+            alert("账号密码错误");
+        }
+
     <?php echo '</script'; ?>
 >
 </head>
@@ -76,7 +86,6 @@ function content_5ab5b9a3e18b25_63640600 (Smarty_Internal_Template $_smarty_tpl)
             <input type="submit" value="Login" id="submit_button">
         </div>
     </form>
-
 </div>
 </body>
 </html><?php }
