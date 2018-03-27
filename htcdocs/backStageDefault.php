@@ -13,7 +13,7 @@ class backStageDefault extends BaseApp{
     function outputBody()
     {
         $smarty =new Smarty();
-        $smarty->display('../static/backStage/default.html');
+        $smarty->display('../static/backStage/index.html');
     }
 }
 
