@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-03-24 03:18:33
-  from "G:\phpStormProjects\test\static\login\index.html" */
+/* Smarty version 3.1.30, created on 2018-03-26 02:57:08
+  from "G:\phpStormProjects\test\static\login\login.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ab5c3897c9cb8_62367533',
+  'unifunc' => 'content_5ab8618456f779_68567599',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '39bd367e973e334edc38996059d544333ef30e5c' => 
+    '1a89df521b3957dc4018851407201a495eddd512' => 
     array (
-      0 => 'G:\\phpStormProjects\\test\\static\\login\\index.html',
+      0 => 'G:\\phpStormProjects\\test\\static\\login\\login.html',
       1 => 1521861509,
       2 => 'file',
     ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ab5c3897c9cb8_62367533 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ab8618456f779_68567599 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>

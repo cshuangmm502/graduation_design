@@ -21,13 +21,13 @@ class index extends BaseApp{
         if($this->error){
             $smarty->assign("test", $this->error);
         }
-        $smarty->display('../static/login/index.html');
+        $smarty->display('../static/login/login.html');
     }
 
     function outputTail()
     {
         $smarty = new Smarty();
-        $smarty->display('../static/foot.tpl');
+        $smarty->display('../static/common/foot.tpl');
     }
 }
 

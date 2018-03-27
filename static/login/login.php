@@ -17,7 +17,7 @@ $pwd=$_POST['password'];
 $sql="select * from user_list WHERE userName = '{$username}' AND passWord = '{$pwd}'";
 $result = mysqli_query($con,$sql);
 if(mysqli_num_rows($result)==1){
-    echo "login success";
+    header('location:../../htcdocs/backStageDefault.php');
 }else{
     header("location:../../htcdocs/index.php?error=1");
     exit();
