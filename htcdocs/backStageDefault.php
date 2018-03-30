@@ -13,7 +13,21 @@ class backStageDefault extends BaseApp{
     function outputBody()
     {
         $smarty =new Smarty();
-        $smarty->display('../static/backStage/index.html');
+        $user = $_GET['user'];
+        $leverPower = $_GET['levelPower'];
+        $smarty->assign('user',$user);
+        if($leverPower==1){
+            $smarty->assign('leverPower','管理员');
+        }else{
+            $smarty->assign('leverPower','用户');
+        }
+        $smarty->display('../static/backStage/default.html');
+    }
+
+    function outputTail()
+    {
+        $smarty = new Smarty();
+        $smarty->display('../static/common/foot.tpl');
     }
 }
 
