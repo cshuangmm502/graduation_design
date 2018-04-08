@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-03-28 01:34:01
+/* Smarty version 3.1.30, created on 2018-04-07 16:12:54
   from "G:\phpStormProjects\test\static\common\foot.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5abaf109705f94_01472319',
+  'unifunc' => 'content_5ac8ee062e0de9_30423744',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5abaf109705f94_01472319 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ac8ee062e0de9_30423744 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="copy-rights">
     <p align="center">Copyright &copy; 2018.Company name All rights reserved.</p>

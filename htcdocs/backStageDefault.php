@@ -10,11 +10,26 @@ include_once('../lib/smarty-3.1.30/libs/Smarty.class.php');
 include_once ('../Ko/BaseApp.php');
 
 class backStageDefault extends BaseApp{
+
+    function outputHead()
+    {
+        $smarty =new Smarty();
+        $user = isset($_GET['user'])&&!empty($_GET['user'])?$_GET['user']:null;
+        $leverPower = isset($_GET['levelPower'])&&!empty($_GET['levelPower'])?$_GET['levelPower']:null;
+        $smarty->assign('user',$user);
+        if($leverPower==1){
+            $smarty->assign('leverPower','管理员');
+        }else{
+            $smarty->assign('leverPower','用户');
+        }
+        $smarty->display('../static/common/head.tpl');
+    }
+
     function outputBody()
     {
         $smarty =new Smarty();
-        $user = $_GET['user'];
-        $leverPower = $_GET['levelPower'];
+        $user = isset($_GET['user'])&&!empty($_GET['user'])?$_GET['user']:null;
+        $leverPower = isset($_GET['levelPower'])&&!empty($_GET['levelPower'])?$_GET['levelPower']:null;
         $smarty->assign('user',$user);
         if($leverPower==1){
             $smarty->assign('leverPower','管理员');

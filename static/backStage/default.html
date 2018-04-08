@@ -9,10 +9,16 @@
     <link href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="../lib/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
 
+
+    <!-- FontAwesome Styles-->
+    <link href="../static/backStage/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom Styles-->
+    <link href="../static/backStage/css/custom-styles.css" rel="stylesheet" />
+
     <!-- Bootstrap Admin Theme -->
     <link href="../static/backStage/css/bootstrap-admin-theme.css" rel="stylesheet" media="screen">
 
-    <!-- Vendors -->
     <!-- (...) -->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,60 +28,6 @@
     <!--<![endif]&ndash;&gt;-->
 </head>
 <body class="bootstrap-admin-with-small-navbar">
-<nav class="navbar navbar-default navbar-inverse navbar-fixed-top " role="navigation">
-    <div class="container">
-        <div class="row">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Boot3Admin</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">首页</a></li>
-                    <li><a href="#">关于我们</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="请输入内容">
-                    </div>
-                    <button type="submit" class="btn btn-default">搜索</button>
-                </form>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理员{$user}<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">设置</a></li>
-                            <li><a href="#">个人资料</a></li>
-                            <li><a href="#">账户中心</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">退出登录</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div>
-    </div>
-</nav>
 
 <div class="container">
     <!-- left, vertical navbar & content -->
@@ -87,7 +39,7 @@
                     <a href=""><i class="glyphicon glyphicon-chevron-right "></i> 首页</a>
                 </li>
                 <li>
-                    <a href=""><i class="glyphicon glyphicon-chevron-right"></i> 账号管理</a>
+                    <a href="userAdmin.php"><i class="glyphicon glyphicon-chevron-right"></i> 用户管理</a>
                 </li>
                 <li>
                     <a href="#"><i class="glyphicon glyphicon-chevron-right"></i> 日历</a><!-- calendar.html -->
@@ -102,13 +54,10 @@
                     <a href=""><i class="glyphicon glyphicon-chevron-right"></i> 数据表格</a>
                 </li>
                 <li>
-                    <a href=""><i class="glyphicon glyphicon-chevron-right"></i> 按钮 &amp; 图标</a>
-                </li>
-                <li>
                     <a href="#"><span class="badge pull-right">812</span> 清单</a>
                 </li>
                 <li>
-                    <a href="#"><span class="badge pull-right">1,234</span> 用户</a>
+                    <a href="#"><span class="badge pull-right">1234</span> 用户</a>
                 </li>
                 <li>
                     <a href="#"><span class="badge pull-right">2,221</span> 消息</a>
@@ -120,7 +69,7 @@
                     <a href="#"><span class="badge pull-right">83</span> 错误</a>
                 </li>
                 <li>
-                    <a href="#"><span class="badge pull-right">4,231</span> 日志</a>
+                    <a href="#"><span class="badge pull-right">4,231</span> 操作日志</a>
                 </li>
             </ul>
         </div>
@@ -135,13 +84,64 @@
                 </div>
             </div>
 
+
             <div class="row">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <div class="text-muted bootstrap-admin-box-title">数据统计</div>
                     </div>
-                    <div class="bootstrap-admin-panel-content text-muted" style="padding: 60px 0; text-align: center">
-                        这里是你要显示的内容
+
+                    <div></div>
+
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="panel panel-primary text-center no-boder bg-color-green" style="margin-top: 20px">
+                                <div class="panel-body">
+                                    <i class="fa fa-bar-chart-o fa-5x"></i>
+                                    <h3>1</h3>
+                                </div>
+                                <div class="panel-footer back-footer-green">
+                                    Ad Accounts
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="panel panel-primary text-center no-boder bg-color-blue" style="margin-top: 20px">
+                                <div class="panel-body">
+                                    <i class="fa fa-html5 fa-5x"></i>
+                                    <h3>1</h3>
+                                </div>
+                                <div class="panel-footer back-footer-blue">
+                                    Html Accounts
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="panel panel-primary text-center no-boder bg-color-red" style="margin-top: 20px">
+                                <div class="panel-body">
+                                    <i class="fa fa fa-comments fa-5x"></i>
+                                    <h3>1 </h3>
+                                </div>
+                                <div class="panel-footer back-footer-red">
+                                    Messages
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="panel panel-primary text-center no-boder bg-color-brown" style="margin-top: 20px">
+                                <div class="panel-body">
+                                    <i class="fa fa-users fa-5x"></i>
+                                    <h3>1 </h3>
+                                </div>
+                                <div class="panel-footer back-footer-brown">
+                                    User Accounts
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,7 +151,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <div class="text-muted bootstrap-admin-box-title">用户</div>
-                            <div class="pull-right"><span class="badge">1,234</span></div>
+                            <div class="pull-right"><span class="badge">1234</span></div>
                         </div>
                         <div class="bootstrap-admin-panel-content">
                             <table class="table table-striped">
@@ -166,21 +166,21 @@
                                 <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <td>Terryblade</td>
+                                    <td>Huang</td>
+                                    <td>@test</td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <td>1</td>
+                                    <td>Terryblade</td>
+                                    <td>Huang</td>
+                                    <td>@test</td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td>Vincent</td>
-                                    <td>Gabriel</td>
-                                    <td>@gabrielva</td>
+                                    <td>1</td>
+                                    <td>Terryblade</td>
+                                    <td>Huang</td>
+                                    <td>@test</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -190,7 +190,7 @@
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="text-muted bootstrap-admin-box-title">订单</div>
+                            <div class="text-muted bootstrap-admin-box-title">操作记录</div>
                             <div class="pull-right"><span class="badge">752</span></div>
                         </div>
                         <div class="bootstrap-admin-panel-content">
@@ -200,27 +200,27 @@
                                     <th>#</th>
                                     <th>Product</th>
                                     <th>Date</th>
-                                    <th>Amount</th>
+                                    <th>Add advertisement</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td>Coat</td>
-                                    <td>02/02/2013</td>
-                                    <td>$25.12</td>
+                                    <th>#</th>
+                                    <th>Product</th>
+                                    <th>Date</th>
+                                    <th>Add advertisement</th>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>Jacket</td>
-                                    <td>01/02/2013</td>
-                                    <td>$335.00</td>
+                                    <th>#</th>
+                                    <th>Product</th>
+                                    <th>Date</th>
+                                    <th>Add advertisement</th>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td>Shoes</td>
-                                    <td>01/02/2013</td>
-                                    <td>$29.99</td>
+                                    <th>#</th>
+                                    <th>Product</th>
+                                    <th>Date</th>
+                                    <th>Add advertisement</th>
                                 </tr>
                                 </tbody>
                             </table>
