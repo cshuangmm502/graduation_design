@@ -9,7 +9,7 @@
 include_once('../lib/smarty-3.1.30/libs/Smarty.class.php');
 include_once ('../Ko/BaseApp.php');
 
-class userAdmin extends BaseApp{
+class dataAdmin extends BaseApp{
     function outputHead()
     {
         $smarty =new Smarty();
@@ -22,21 +22,21 @@ class userAdmin extends BaseApp{
         if (!$con) {
             die("connect error:" . mysqli_connect_error());
         }
-        $sql="select * from user_list";
+        $sql="select * from ad_data ";
         $result = mysqli_query($con,$sql);
         $arr = array();
         while($rows=mysqli_fetch_object($result)){
             //
-            $arr[]=array('userId'=> $rows->userId,
-                'userName'=> $rows->userName,
-                'levelPower'=> $rows->levelPower,
-                'lastTime'=> $rows->lastSignTime);
+            $arr[]=array('numId'=> $rows->num_id,
+                'picSrc'=> $rows->pic_src,
+                'picWord'=> $rows->pic_word,
+                'pic_Origin'=> $rows->pic_origin);
         }
 
 //        var_dump($arr);
         $smarty =new Smarty();
-        $smarty->assign("userlist",$arr);
-        $smarty->display('../static/backStage/userAdmin.html');
+        $smarty->assign("adlists",$arr);
+        $smarty->display('../static/backStage/dataAdmin.html');
     }
 
     function outputTail()
@@ -46,5 +46,5 @@ class userAdmin extends BaseApp{
     }
 }
 
-$obj =new userAdmin();
+$obj =new dataAdmin();
 $obj->run();

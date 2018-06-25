@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UserAdmin</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../lib/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+
+
+    <!-- FontAwesome Styles-->
+    <link href="../static/backStage/css/font-awesome.css" rel="stylesheet"/>
+
+    <!-- Custom Styles-->
+    <link href="../static/backStage/css/custom-styles.css" rel="stylesheet"/>
+
+    <!-- Bootstrap Admin Theme -->
+    <link href="../static/backStage/css/bootstrap-admin-theme.css" rel="stylesheet" media="screen">
+
+    <!-- TABLE STYLES-->
+    <link href="../static/backStage/css/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- (...) -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+       <!--<script type="text/javascript" src="js/html5shiv.js"></script>-->
+    <!--<script type="text/javascript" src="js/respond.min.js"></script>-->
+    <!--<![endif]&ndash;&gt;-->
+</head>
+<body class="bootstrap-admin-with-small-navbar">
+
+<div class="container">
+    <!-- left, vertical navbar & content -->
+    <div class="row">
+        <!-- left, vertical navbar -->
+        <div class="col-md-2 bootstrap-admin-col-left">
+            <ul class="nav navbar-collapse collapse bootstrap-admin-navbar-side">
+                <li>
+                    <a href="backStageDefault.php"><i class="glyphicon glyphicon-chevron-right "></i> 首页</a>
+                </li>
+                <li class="active">
+                    <a><i class="glyphicon glyphicon-chevron-right"></i> 用户管理</a>
+                </li>
+                <li class="disabled">
+                    <a href="#"><i class="glyphicon glyphicon-chevron-right"></i> 统计图表</a><!-- stats.html -->
+                </li>
+                <li>
+                    <a href="#"><i class="glyphicon glyphicon-chevron-right"></i>数据管理</a>
+                </li>
+                <li>
+                    <a href="#"><span class="badge pull-right">1234</span> 用户</a>
+                </li>
+                <li>
+                    <a href="#"><span class="badge pull-right">4,231</span> 操作日志</a>
+                </li>
+            </ul>
+        </div>
+        <!-- content -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header">
+                            个人信息
+                        </h2>
+                    </div>
+                    <div class="col-md-12">
+
+                        <div class="form-horizontal">
+                            <!--注册数据库逻辑还未做完-->
+                            <form autocomplete="off" method="post" action="">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">User Name</label>
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" id="user_name_input"
+                                               placeholder="User Name">
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Password</label>
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-5">
+                                        <input type="password" class="form-control" id="password_input"
+                                               placeholder="Password">
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Real Name</label>
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" id="real_name_input"
+                                               placeholder="Real Name">
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">User Age</label>
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" id="user_age_input" placeholder="Age">
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Telephone</label>
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" id="user_telephone_input"
+                                               placeholder="Telephone">
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Birth Date</label>
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-5">
+                                        <input type="date" class="form-control" id="user_birth_input"
+                                               placeholder="Birth Date">
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Email</label>
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-5">
+                                        <input type="email" class="form-control" id="user_email_input"
+                                               placeholder="Email">
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label"> Private Identity</label>
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" id="user_identity_input"
+                                               placeholder="Private Identity">
+                                    </div>
+                                    <div class="col-sm-1"></div>
+                                </div>
+                                <div style="height: 5%"></div>
+                                <div class="form-group">
+                                    <div class="col-sm-3"></div>
+                                    <div class="col-sm-9">
+                                        <button class="btn col-sm-3" id="send_btn">提交</button>
+                                        <div class="col-sm-1"></div>
+                                        <button class="btn col-sm-3" id="reset_btn">重置</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- JS Scripts-->
+<!-- jQuery Js -->
+<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap Js -->
+<script type="text/javascript" src="../lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<!-- Metis Menu Js -->
+<script src="../static/backStage/css/jquery.metisMenu.js"></script>
+<!-- DATA TABLE SCRIPTS -->
+<script src="../static/backStage/css/jquery.dataTables.js"></script>
+<script src="../static/backStage/css/dataTables.bootstrap.js"></script>
+
+<!-- Custom Js -->
+<script src="../static/backStage/css/custom-scripts.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#return_btn").click(function () {
+            window.history.back(-1);
+        });
+
+        $("#send_btn").click(function () {
+            alert("提交完成");
+        })
+
+        $("#reset_btn").click(function () {
+            $("#user_name_input").val("");
+            $("#password_input").val("");
+            $("#real_name_input").val("");
+            $("#user_age_input").val("");
+            $("#user_telephone_input").val("");
+            $("#user_birth_input").val("");
+            $("#user_email_input").val("");
+            $("#user_identity_input").val("");
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UserAdmin</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../lib/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+
+
+    <!-- FontAwesome Styles-->
+    <link href="../static/backStage/css/font-awesome.css" rel="stylesheet"/>
+
+    <!-- Custom Styles-->
+    <link href="../static/backStage/css/custom-styles.css" rel="stylesheet"/>
+
+    <!-- Bootstrap Admin Theme -->
+    <link href="../static/backStage/css/bootstrap-admin-theme.css" rel="stylesheet" media="screen">
+
+    <!-- TABLE STYLES-->
+    <link href="../static/backStage/css/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- (...) -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+       <!--<script type="text/javascript" src="js/html5shiv.js"></script>-->
+    <!--<script type="text/javascript" src="js/respond.min.js"></script>-->
+    <!--<![endif]&ndash;&gt;-->
+</head>
+<body class="bootstrap-admin-with-small-navbar">
+
+<div class="container">
+    <!-- left, vertical navbar & content -->
+    <div class="row">
+        <!-- left, vertical navbar -->
+        <div class="col-md-2 bootstrap-admin-col-left">
+            <ul class="nav navbar-collapse collapse bootstrap-admin-navbar-side">
+                <li>
+                    <a href="backStageDefault.php"><i class="glyphicon glyphicon-chevron-right "></i> 首页</a>
+                </li>
+                <li class="active">
+                    <a><i class="glyphicon glyphicon-chevron-right"></i> 用户管理</a>
+                </li>
+                <li class="disabled">
+                    <a href="#"><i class="glyphicon glyphicon-chevron-right"></i> 统计图表</a><!-- stats.html -->
+                </li>
+                <li>
+                    <a href="#"><i class="glyphicon glyphicon-chevron-right"></i>数据管理</a>
+                </li>
+                <li>
+                    <a href="#"><span class="badge pull-right">12</span> 用户</a>
+                </li>
+                <li>
+                    <a href="#"><span class="badge pull-right">3</span> 操作日志</a>
+                </li>
+            </ul>
+        </div>
+        <!-- content -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header">
+                            个人信息
+                        </h2>
+                    </div>
+                    <div class="col-md-12">
+
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">User Id</label>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <label class="col-sm-4 control-label">{$user_information[0]['user_Id']}</label>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Real Name</label>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <label class="col-sm-4 control-label">{$user_information[0]['user_Name']}</label>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">User Age</label>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <label class="col-sm-4 control-label">{$user_information[0]['user_Age']}</label>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Telephone</label>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <label class="col-sm-5 control-label">{$user_information[0]['user_Phone']}</label>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Birth Date</label>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <label class="col-sm-5 control-label">{$user_information[0]['user_Birth']}</label>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Email</label>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <label class="col-sm-5 control-label">{$user_information[0]['user_Email']}</label>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label"> Private Identity</label>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <label class="col-sm-5 control-label">{$user_information[0]['user_Identity']}</label>
+                                </div>
+                                <div class="col-sm-1"></div>
+                            </div>
+                            <div style="height: 5%"></div>
+                            <div class="form-group">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-10">
+                                    <button class="btn col-sm-3" id="edit_btn">编辑</button>
+                                    <div class="col-sm-1"></div>
+                                    <button class="btn col-sm-3" id="return_btn">返回</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- JS Scripts-->
+<!-- jQuery Js -->
+<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap Js -->
+<script type="text/javascript" src="../lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<!-- Metis Menu Js -->
+<script src="../static/backStage/css/jquery.metisMenu.js"></script>
+<!-- DATA TABLE SCRIPTS -->
+<script src="../static/backStage/css/jquery.dataTables.js"></script>
+<script src="../static/backStage/css/dataTables.bootstrap.js"></script>
+
+<!-- Custom Js -->
+<script src="../static/backStage/css/custom-scripts.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#return_btn").click(function () {
+            window.history.back(-1);
+        })
+
+        $("#edit_btn").click(function () {
+        //    更新用户信息，未作
+        })
+    })
+</script>
+</body>
+</html>
