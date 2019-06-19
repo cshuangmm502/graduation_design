@@ -27,6 +27,7 @@ class index extends BaseApp{
     function outputTail()
     {
         $smarty = new Smarty();
+        var_dump($smarty->getCompileDir());
         $smarty->display('../static/common/foot.tpl');
     }
 }
